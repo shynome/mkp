@@ -11,8 +11,8 @@ deploy_dir=$git_deploy_dir
 cd \$deploy_dir
 git pull origin master
 
-echo "[ $git_init_dir ] 已部署到 [ $git_deploy_dir ]"
+echo "[ $git_init_dir ] ???? [ $git_deploy_dir ]"
 EOF
 chmod +x $post_receive_hook
 
-source ./finished.sh
+source $current_dir/finished.sh

@@ -9,4 +9,4 @@ echo $git_init_dir $git_deploy_dir
 git init --bare $git_init_dir
 git clone $git_init_dir $git_deploy_dir
 
-source ./php_hooks.sh
+source $current_dir/php_hooks.sh
