@@ -12,3 +12,5 @@ fi
 if !(hash pm2 2>/dev/null); then
   sudo npm i -g pm2
 fi
+
+echo "pm2 init in ubuntu is ok"
