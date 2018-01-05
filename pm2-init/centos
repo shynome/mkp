@@ -1,0 +1,16 @@
+#! /bin/bash
+
+if !(hash git 2>/dev/null); then
+  sudo yum -y install git
+fi
+
+if !(hash node 2>/dev/null); then
+  curl --silent --location https://rpm.nodesource.com/setup_8.x | sudo bash -
+  sudo yum -y install nodejs
+fi
+
+if !(hash pm2 2>/dev/null); then
+  sudo npm i -g pm2
+fi
+
+echo "pm2 init in centos is ok"
