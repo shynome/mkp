@@ -9,9 +9,9 @@ unset GIT_DIR
 deploy_dir=$git_deploy_dir
 
 cd \$deploy_dir
-git pull origin master
+git pull 
 
-echo "[ $git_init_dir ] 已部署到 [ $git_deploy_dir ]"
+echo "[ $git_init_dir ] 已部署到 [ \$deploy_dir ]"
 EOF
 chmod +x $post_receive_hook
 
